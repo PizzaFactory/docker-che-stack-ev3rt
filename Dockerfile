@@ -5,7 +5,8 @@ ENV DEBIAN_FRONTEND noninteracvive
 
 USER root
 
-RUN apt-get -y install software-properties-common && \
+RUN apt-get -y update && \
+    apt-get -y install software-properties-common && \
     add-apt-repository -y ppa:team-gcc-arm-embedded/ppa && \
     apt-get -y remove software-properties-common && \
     apt-get -y update && \
