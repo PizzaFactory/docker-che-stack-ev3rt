@@ -3,6 +3,8 @@ MAINTAINER Masaki Muranaka <monaka@monami-ya.com>
 
 ENV DEBIAN_FRONTEND noninteracvive
 
+USER root
+
 RUN apt-get -y install software-properties-common && \
     add-apt-repository -y ppa:team-gcc-arm-embedded/ppa && \
     apt-get -y remove software-properties-common && \
@@ -12,3 +14,5 @@ RUN apt-get -y install software-properties-common && \
         u-boot-tools \
         libboost1.58-all-dev && \
     apt-get -y autoremove && apt-get -y autoclean
+
+USER user
