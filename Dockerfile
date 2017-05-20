@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Masaki Muranaka <monaka@monami-ya.com>
 
-ENV DEBIAN_FRONTEND noninteracvive
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -y update && \
     apt-get -y upgrade && \
