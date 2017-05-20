@@ -1,7 +1,7 @@
 FROM pizzafactory/che-stack-ubuntu_jre
 MAINTAINER Masaki Muranaka <monaka@monami-ya.com>
 
-ENV DEBIAN_FRONTEND noninteracvive
+ENV DEBIAN_FRONTEND noninteractive
 
 USER root
 
